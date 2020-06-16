@@ -1,6 +1,10 @@
 @import './footer.scss';
 @import './menu.scss';
 
+*{
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+}
+
 html,body, div, p, img, h1, h2, h3, h4, h5{
     box-sizing: border-box;
 }
@@ -8,44 +12,32 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
 body{
     margin:0;
     padding:0;
-    font-size: 16px;
-    font-family: sans-serif;
+    font-size: 18px;
+    h2, h3{
+        font-size: 24px;
+        font-weight: bold;
+        padding:30px 0 10px 5px;
+        border-bottom: 5px solid #23AC0E;
+    }
+    h3{
+        border:none;
+    }
 }
 
-h1 {
-    font-size: 2em;
-}
 
-.container{
-    width:980px;
-    max-width: 100%;
-    margin:0 auto;
-    padding: 0.5em;
-}
 
-.main-image {
-    background-image: url('../images/thumbnail.jpg');
-    background-repeat: no-repeat;
+
+
+
+
+.top-wrapper{
+    background-image: url(../images/secret-2681508_640.jpg);
     background-size: cover;
-    background-position: center center;
-    position: relative;
-    width: 100%;
-    height: 600px;
-    border-radius: 2em;
-    margin:1em 0;
+    height: 100vh;
+    text-align: center;
+    h1{
+        margin-top:40vh;
+        padding: 50px 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+    }
 }
-
-$icon-size: 64px;
-.icon{
-    width: $icon-size;
-    height: $icon-size;
-    border-radius: $icon-size/2;
-    padding: 4px;
-    position: absolute;
-    top:1em;
-    left: 1em;
-}
-
-
-
-
