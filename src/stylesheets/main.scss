@@ -1,8 +1,11 @@
 @import './footer.scss';
 @import './menu.scss';
 
+$main-color:#23AC0E;
+
 *{
-    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    //font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    font-family:Noto Sans,Noto Sans CJK JP,sans-serif;
 }
 
 html,body, div, p, img, h1, h2, h3, h4, h5{
@@ -10,17 +13,23 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
 }
 
 body{
-    margin:0;
+    margin:0 10px;
     padding:0;
-    font-size: 18px;
+    font-size: 17px;
+    line-height:1.58 ;
+    color: #1a1a1a;
     h2, h3{
-        font-size: 24px;
+        font-size: 22px;
         font-weight: bold;
         padding:30px 0 10px 5px;
-        border-bottom: 5px solid #23AC0E;
+        border-bottom: 5px solid $main-color;
     }
     h3{
         border:none;
+    }
+    img{
+        width: 100%;
+        margin:20px 0;
     }
 }
 
@@ -39,5 +48,32 @@ body{
         margin-top:40vh;
         padding: 50px 0;
         background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+
+}
+
+.main1-wrapper{
+
+}
+
+.main2-wrapper{
+    .Ako{
+        padding: 0.5em 1em;
+        margin: 2em 0;
+        color: #5d627b;
+        background: white;
+        border-left: solid 5px rgba($main-color,0.5);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    }
+    .Bko{
+        padding: 0.5em 1em;
+        margin: 2em 0;
+        color: #5d627b;
+        background: white;
+        border-right: solid 5px rgba($main-color,0.5);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    }
+    p{
+        margin:6px 0;
     }
 }
