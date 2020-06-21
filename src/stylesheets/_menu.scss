@@ -50,7 +50,42 @@ $main-color:#23AC0E;
 
   .space-comment{
     height: 20px;
+
   }
+  .put-icon{
+    height: 100px;
+    position: relative;
+    .icon1{
+    position: absolute;
+    width: 30px;
+
+
+    }
+    .comment__text2{
+      float:right;
+      width: 85%;
+      position: relative;
+      padding: 0.5em 0.7em;
+      margin-bottom:1em;
+      background: rgba($main-color, 0.1);
+      font-weight: bold;
+      p{
+          font-size: 15px;
+          margin:0;
+      }
+    }
+    .comment__text2:after{
+      position: absolute;
+      content: '';
+      right: 100%;
+      top: 12px;
+      border: 15px solid transparent;
+      border-right: 15px solid rgba($main-color, 0.1);
+      width: 0;
+      height: 0;
+    }
+  }
+
 
 
   .intro-pro {
