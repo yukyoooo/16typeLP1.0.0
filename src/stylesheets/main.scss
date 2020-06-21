@@ -35,46 +35,8 @@ body{
         border-bottom:3px solid #EAA8BF;
         font-weight:bold;
     }
-    .button-wrapper{
-        text-align: center;
-        button{
-            background:$main-color;
-            border-radius: 5px;
-            color:#fff;
-            border:none;
-            position:relative;
-            height:60px;
-            font-size:16px;
-            padding:0 2em;
-            cursor:pointer;
-            transition:800ms ease all;
-            outline:none;
-        }
-        button:hover{
-            background:#fff;
-            color:$main-color;
-        }
-        button:before,button:after{
-            content:'';
-            position:absolute;
-            top:0;
-            right:0;
-            height:2px;
-            width:0;
-            background: $main-color;
-            transition:400ms ease all;
-        }
-        button:after{
-            right:inherit;
-            top:inherit;
-            left:0;
-            bottom:0;
-        }
-        button:hover:before,button:hover:after{
-            width:100%;
-            transition:800ms ease all;
-        }
-    }
+
+
 
 }
 
