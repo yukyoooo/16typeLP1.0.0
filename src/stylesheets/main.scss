@@ -120,6 +120,24 @@ body{
         img{
             margin:0 0 20px 0;
         }
+        .conversation-wrapper{
+            display: flex;
+            margin-bottom: 5px;
+            .conversation-img{
+                width:8%;
+                margin-right:10px;
+                img{
+                    margin-bottom:5px;
+                }
+            }
+            .conversation{
+                width: 80%;
+                P{
+                    margin:0;
+                }
+            }
+        }
+
     }
     .talk:before,.talk:after{
         content:'';
